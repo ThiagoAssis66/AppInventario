@@ -5,6 +5,8 @@ import { NavigationContainer } from '@react-navigation/native'
 
 
 import CustomDrawerContent from './components/Tab4/CustomDrawerContent'
+import RegistrationUnit from './components/Tab4/registrationUnits'
+import UnidadesList from './components/Tab4/unitsList'
 
 
 const Drawer = createDrawerNavigator()
@@ -33,13 +35,13 @@ const Tab4Screen = () => {
 
 const CadastroUnidades = () => (
   <View style={styles.container}>
-    <Text> CadastroUnidades </Text>
+    <RegistrationUnit />
   </View>
 )
 
 const RelacaoUnidades = () => (
   <View style={styles.container}>
-    <Text>RelacaoUnidades</Text>
+    <UnidadesList />
   </View>
 )
 

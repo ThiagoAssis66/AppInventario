@@ -5,6 +5,10 @@ import { NavigationContainer } from '@react-navigation/native'
 
 
 import CustomDrawerContent from './components/Tab2/CustomDrawerContent'
+import RegistrationFunc from './components/Tab2/registrationFunc'
+import FuncionarioList from './components/Tab2/funcList'
+
+
 const Drawer = createDrawerNavigator()
 
 const Tab2Screen = () => {  
@@ -34,13 +38,13 @@ const Tab2Screen = () => {
 
 const CadastroFuncionario = () => (
   <View style={styles.container}>
-    <Text> Cadastro de Funcionario </Text>
+    <RegistrationFunc />
   </View>
 )
 
 const RelatorioFuncionario = () => (
   <View style={styles.container}>
-    <Text>Relatorio de Funcionarios</Text>
+    <FuncionarioList />
   </View>
 )
 

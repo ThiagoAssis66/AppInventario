@@ -28,7 +28,7 @@ const PieChartScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Gráfico Mensal</Text>
+      <Text style={styles.header}>Analise Mensal</Text>
       <PieChart
         data={detailedData}
         width={screenWidth - 40} 

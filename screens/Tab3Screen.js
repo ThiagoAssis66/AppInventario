@@ -5,6 +5,8 @@ import { NavigationContainer } from '@react-navigation/native'
 
 
 import CustomDrawerContent from './components/Tab3/CustomDrawerContent'
+import RegistrationPart from './components/Tab3/registrationParts'
+import PecasList from './components/Tab3/inventParts'
 
 const Drawer = createDrawerNavigator()
 
@@ -32,13 +34,13 @@ const Tab2Screen = () => {
 
 const CadastroPecas = () => (
   <View style={styles.container}>
-    <Text> CadastroPecas </Text>
+    <RegistrationPart />
   </View>
 )
 
 const InventarioPecas = () => (
   <View style={styles.container}>
-    <Text>InventarioPecas</Text>
+    <PecasList />
   </View>
 )
 

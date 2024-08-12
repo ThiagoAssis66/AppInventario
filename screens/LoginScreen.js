@@ -23,7 +23,7 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = useState('')
 
   const handleLogin = () => {
-    if (email === '' && password === '') {
+    if (email === 'teste' && password === '123') {
       navigation.navigate('Success')
       Alert.alert('Login efetuado!')
     } else {

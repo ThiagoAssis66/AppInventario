@@ -3,8 +3,9 @@ import { View, Text, StyleSheet } from 'react-native'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import { NavigationContainer } from '@react-navigation/native'
 
-import Tab1 from './components/Tab1/Tab1Graphic'
+import PieChartScreen from './components/Tab1/Graphic'
 import CustomDrawerContent from './components/Tab1/CustomDrawerContent'
+import DetailsScreen from './components/Tab1/CharData' 
 
 
 const Drawer = createDrawerNavigator()
@@ -35,13 +36,13 @@ const Tab1Screen = () => {
 
 const GraficoMensal = () => (
   <View style={styles.container}>
-    <Tab1 />
+    <PieChartScreen />
   </View>
 )
 
 const DadosGraficos = () => (
   <View style={styles.container}>
-    <Text>Dados do Gráfico</Text>
+    <DetailsScreen />
   </View>
 )
 
